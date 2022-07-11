@@ -1,0 +1,40 @@
+#about {
+	background-color: var(--main-orange);
+	border-bottom: 3px solid var(--main-black);		
+	padding-left: 9em;
+	padding-right: 9em;
+}
+
+#about-container {
+	display: flex;
+	flex-direction: row;	
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#about-text-container {
+	margin: 2em;
+	max-width: 66%;
+}
+
+#about-profile-container {
+	margin: 2em;
+	max-width: 33%;
+}
+
+
+#about-profile-img {
+	height: 325px;
+	width: 325px;
+	border-radius: 50%;
+	border: solid black 3px;
+}
+
+#about-title-container {
+	margin-bottom: 1em;
+}
+
+#about-title {
+	margin-bottom: 0.5em;
+}

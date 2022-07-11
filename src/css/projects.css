@@ -1,0 +1,19 @@
+#projects {
+	background-color: var(--main-orange);
+	border-bottom: 3px solid var(--main-black);
+	padding-top: 2em;
+}
+
+#projects-header-wrapper {
+	text-align: center;
+}
+
+#projects-list-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+

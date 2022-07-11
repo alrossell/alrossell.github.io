@@ -1,0 +1,11 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+	--main-black: #000000;
+	--main-medium-gray: #565656;
+	--main-light-gray: #9e9e9e;
+	--main-orange: #fba92c;
+	--main-white: #FFFFFF;
+}

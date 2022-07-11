@@ -1,0 +1,38 @@
+#skills {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	border-bottom: 3px solid var(--main-black);	
+}
+
+#skills-header-container {
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+#skills-title {
+	margin-bottom: 1em;
+}
+
+.skills-description {
+	margin: 1em;
+}
+
+#skills-display-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#skills-list-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+
+.skills-item-container {
+	min-width: 450px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+

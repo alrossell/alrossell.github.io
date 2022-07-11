@@ -1,0 +1,9 @@
+.skills-display-wrapper {
+	text-align: center;
+}
+
+.skills-display-img {
+	height: 7em;
+	width: 7em;
+	border-radius: 50%;
+}

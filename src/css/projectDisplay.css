@@ -1,0 +1,10 @@
+.project-display {
+	display: flex;
+	flex-direction: row;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.project-display-text {
+	margin-left: 2em;
+}
