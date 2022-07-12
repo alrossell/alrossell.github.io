@@ -9,7 +9,7 @@ import Header from "./Header"
 import Projects from "./Projects"
 import About from "./About"
 import Skills from "./Skills"
-
+import Footer from "./Footer"
 
 const container = document.getElementById('app');
 const root = createRoot(container); 
@@ -22,6 +22,7 @@ const App = () => {
 			<About/> 
 			<Skills/>
 			<Projects/>
+			<Footer/>
 		</Fragment>
 	)
 }

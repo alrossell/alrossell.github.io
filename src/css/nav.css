@@ -7,6 +7,13 @@
 	background-color: var(--main-black);
 	color: var(--main-white);
 	padding: 0.5em;
+
+	position: fixed;
+	top: 0;
+
+	webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+	-moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+	transition: padding-top 0.3s, padding-bottom 0.3s;
 }
 
 #nav-name-wrapper {
