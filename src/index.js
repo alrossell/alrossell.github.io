@@ -9,6 +9,7 @@ import Header from "./Header"
 import Projects from "./Projects"
 import About from "./About"
 import Skills from "./Skills"
+import Hobbies from "./Hobbies"
 import Footer from "./Footer"
 
 const container = document.getElementById('app');
@@ -22,6 +23,7 @@ const App = () => {
 			<About/> 
 			<Skills/>
 			<Projects/>
+			<Hobbies/>
 			<Footer/>
 		</Fragment>
 	)

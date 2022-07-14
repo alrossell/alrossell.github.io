@@ -1,33 +1,55 @@
-import React from "react";
+import React from "react"
+import {useState} from 'react';
+import { AiFillMail, AiFillFileText } from "react-icons/ai";
 
 import './css/nav.css'
 
 function Nav(props) {
+	const [isActive, setIsActive] = useState(false);
+	
+	function toggleNav() {
+		document.getElementById("nav-links-container")
+	}
+
 	return (
 		<nav id="nav">
-			<a id="nav-name-wrapper">
+			<a href="#header" id="nav-name-wrapper">
 				<b>Andrew Rossell</b>
 			</a>
-			<ul id="nav-links-container">
-				<li className="nav-bar-item">
-					<a> ABOUT </a>
+
+			<button id="nav-button" className="test">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			<ul id="nav-links-container" className="test">
+			   <li className="nav-bar-item">
+					<a href="#about"> ABOUT </a>
 				</li>
 				<li className="nav-bar-item">
-					<a> SKILLS </a>
+					<a href="#skills"> SKILLS </a>		
 				</li>
 				<li className="nav-bar-item">
-					<a> PROJECTS </a>
+					<a href="#projects"> PROJECTS </a>
 				</li>
 				<li className="nav-bar-item">
-					<a> HOBBIES </a>
+					<a href="#hobbies"> HOBBIES </a>
 				</li>
 				<li className="nav-bar-item">
-					<a> RESUME </a>
+					<a>
+						RESUME
+						<AiFillFileText className="nav-icon"/>													
+					</a>
 				</li>
 				<li className="nav-bar-item">
-					<a> CONTACT </a>
+					<a> 
+						CONTACT
+						<AiFillMail className="nav-icon"/>
+					</a>
 				</li>
-			</ul>
+			 </ul>
+
 		</nav>
 	)
 }

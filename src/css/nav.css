@@ -4,29 +4,119 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--main-black);
-	color: var(--main-white);
 	padding: 0.5em;
-
 	position: fixed;
 	top: 0;
 
+
+	background-color: var(--main-black);
+	color: var(--main-white);
+	
 	webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
 	-moz-transition: padding-top 0.3s, padding-bottom 0.3s;
 	transition: padding-top 0.3s, padding-bottom 0.3s;
 }
 
-#nav-name-wrapper {
-	margin-right: 8em;
-}
-
 #nav-links-container {
-	margin-left: 2em;
+	margin-left: 12vw;
 	display: flex;
 	flex-direction: row;
 	list-style: none;
 }
 
+#nav-name-wrapper {
+	text-decoration: none;
+}
+
+#nav-name-wrapper b {
+	color: var(--main-orange);
+	transition: all 0.25s;
+}
+
+#nav-name-wrapper b:hover {
+	color: var(--main-white);
+	cursor: pointer;
+}
+
 .nav-bar-item {
-	margin: 1em;
+	margin: 0.5vw;
+}
+
+.nav-bar-item a {
+	color: var(--main-white);
+	text-decoration: none;
+}
+
+.nav-bar-item a:hover {
+	color: var(--main-orange);
+}
+
+#nav-button {
+	display: none;	
+	flex-direction: row;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	
+	#nav {
+		display: grid;
+		grid-template-columns: 80% 30%;
+		grid-template-rows: auto;
+		grid-template-areas:
+		"name butt"
+		"links links";
+	}
+
+	#nav-name-wrapper {
+		padding-left: 12vw; 
+		grid-area: name;
+	}
+	
+	#nav-button {
+		grid-area: butt;
+		place-self: center;
+		background-color: var(--main-black);
+		border: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	#nav-button:hover {
+		cursor: pointer;
+	}
+	
+	#nav-button:hover span {
+		background-color: var(--main-orange);
+	}
+
+	#nav-button span {
+		background-color: var(--main-white);
+		display: block;
+		width: 33px;
+		height: 4px;
+		margin: 2.5px;
+		position: relative;
+	}
+
+	#nav-links-container {
+		grid-area: links;
+	
+		height: 0px;
+		flex-direction: column;
+		overflow: hidden;
+		transition-delay: 0.25s;
+		transition: height 1s ease;
+	}
+
+	.nav-bar-item {
+		margin: 0px;
+		margin-top: auto; 
+	}
+	
+	#nav-button:focus + #nav-links-container {
+		height: 170px
+	}
+
 }

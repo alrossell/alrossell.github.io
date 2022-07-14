@@ -1,10 +1,12 @@
 import React from "react";
 
+import "./css/footer.css"
+
 function Footer(props) {
 	return (
-		<div>
-			<h1> hello </h1>
-		</div>
+		<footer id="footer">
+			footer
+		</footer>
 	)
 }
 

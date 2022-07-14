@@ -1,10 +1,33 @@
 .project-display {
 	display: flex;
 	flex-direction: row;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-top: 5vw;
 }
 
-.project-display-text {
-	margin-left: 2em;
+.project-display-bar {
+	margin-left: 1vw;
+	padding-left: 2px;
+	padding-right: 1px;
+	margin-right: 1vw;
+	height: auto;
+	background-color: var(--main-dark-gray);
+}
+
+@media only screen and (max-width: 1000px) {
+	.project-display {
+		flex-direction: column;
+
+	}
+
+	.project-display-bar {
+		margin: 0px;
+		padding: 0px;
+		margin-top: 1vh;
+		margin-bottom: 1vh;
+		padding-top: 4px;
+
+
+		width: 100%;
+	}
+
 }

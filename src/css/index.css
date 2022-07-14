@@ -3,9 +3,42 @@
     margin: 0px;
     box-sizing: border-box;
 
+	--mobile-width: 1000px;
+
 	--main-black: #000000;
-	--main-medium-gray: #565656;
+	--main-dark-gray: #343434;
+	--main-medium-gray: #454545;
 	--main-light-gray: #9e9e9e;
+
 	--main-orange: #fba92c;
 	--main-white: #FFFFFF;
+	--second-white: #FAFAFA;
+}
+
+section {
+	padding-top: 55px;
+	padding-bottom: 40px;
+	border-bottom: 3px solid var(--main-black);	
+}
+
+.white-title-text {
+	color: var(--main-white);
+	font-size: 40px;
+	margin-bottom: 0.5rem;
+}
+
+.first-order-text {
+	color: var(--main-black);
+	font-size: 35px;
+	margin-bottom: 0.5rem;
+}
+
+.second-order-text {
+	color: var(--main-dark-gray);
+	font-size: 25px;
+	margin-bottom: 0.5rem;
+}
+
+.third-order-text {
+	color: var(--main-dark-gray);
 }

@@ -1,24 +1,29 @@
 import React from "react";
 
+import { DiPython,  DiJavascript1, DiJava} from "react-icons/di";
+import { FaCloudsmith, FaReact, FaBuffer } from "react-icons/fa";
+
 import SkillsDisplay from "./components/SkillDisplay"
 import "./css/skill.css"
 
 function Skills(props) {
 
-	const skills = {
-		"Python": "test",
-		"Javascript": "test",
-		"Java": "test",
-		"Machine Learing": "test",
-		"Web Design": "test",
-		"Something": "test"
-	}
 
-	const skillsItems = Object.keys(skills).map((key) => 
+	const skills = [
+		["Python", "test", <DiPython/>],
+		["Javascript", "test", <DiJavascript1/>],
+		["Java", "test", <DiJava/>],
+		["Machine Learning", "test", <FaCloudsmith/>],
+		["Wen Design", "test", <FaReact/>],
+		["Something", "test", <FaBuffer/> ]
+	]
+
+	const skillsItems = skills.map((object) => 
 		<li className="skills-item-container"> 
 			<SkillsDisplay 
-				title = {key}
-				description = {skills[key]}
+				title = {object[0]}
+				description = {object[1]}
+				img = {object[2]}
 			/>
 		</li>
 

@@ -1,8 +1,6 @@
 #about {
 	background-color: var(--main-orange);
-	border-bottom: 3px solid var(--main-black);		
-	padding-left: 9em;
-	padding-right: 9em;
+	
 }
 
 #about-container {
@@ -18,19 +16,40 @@
 	max-width: 66%;
 }
 
+
+
 #about-profile-container {
-	margin: 2em;
-	max-width: 33%;
+	width: auto;
+	text-align: center;
 }
 
-
 #about-profile-img {
-	height: 325px;
-	width: 325px;
+	height: 275px;
+	width: 275px;
 	border-radius: 50%;
 	border: solid black 3px;
 }
 
+#about-icon-container {
+	display: flex;
+	justify-content: center;
+}
+
+#about-icon-container a {
+	width: 35px;
+	height: 35px;
+	margin-left: 3px;
+	margin-right: 3px;
+	line-height: 40px;
+	text-align: center;
+	background-color: var(--main-black);
+	border-radius: 100%;
+	color: var(--main-white);
+}
+
+#about-icon-container a:hover {
+	background-color: var(--main-light-gray);
+}
 #about-title-container {
 	margin-bottom: 1em;
 }
