@@ -18,18 +18,32 @@
 section {
 	padding-top: 55px;
 	padding-bottom: 40px;
-	border-bottom: 3px solid var(--main-black);	
+	border-bottom: 3px solid var(--main-black);
+	padding-left: 12vw;
+	padding-right: 12vw;
+}
+
+.black-title-text {
+	color: var(--main-black);
+	font-size: 42px;
+	margin-bottom: 0.5rem;
 }
 
 .white-title-text {
 	color: var(--main-white);
-	font-size: 40px;
+	font-size: 42px;
 	margin-bottom: 0.5rem;
 }
 
 .first-order-text {
 	color: var(--main-black);
 	font-size: 35px;
+	margin-bottom: 0.5rem;
+}
+
+.second-black-text {
+	color: var(--main-black);
+	font-size: 25px;
 	margin-bottom: 0.5rem;
 }
 

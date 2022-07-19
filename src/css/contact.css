@@ -1,0 +1,45 @@
+#contact {
+	background: var(--main-orange);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#contact-title {
+	margin-bottom: 5vw;
+}
+
+#contact-container {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-evenly;
+	list-style: none;
+
+	flex-wrap: wrap;
+}
+
+#contact-container li {
+	background-color: var(--main-black);
+	color: var(--main-white);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: .5rem;
+	
+	margin-bottom: 1vw;
+	width: 230px;
+	height: 230px;
+}
+
+#contact-container svg {
+	height: 60px;
+	width: 60px;
+	color: var(--main-white);
+}
+
+#contact-container a {
+	font-size: 20px;
+	color: var(--main-orange)
+}

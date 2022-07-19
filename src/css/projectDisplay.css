@@ -9,7 +9,6 @@
 	padding-left: 2px;
 	padding-right: 1px;
 	margin-right: 1vw;
-	height: auto;
 	background-color: var(--main-dark-gray);
 }
 
@@ -17,6 +16,11 @@
 	.project-display {
 		flex-direction: column;
 
+	}
+
+	.project-display img{
+		min-width: 185px;
+		max-width: 50%
 	}
 
 	.project-display-bar {

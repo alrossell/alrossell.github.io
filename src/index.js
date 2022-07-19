@@ -11,6 +11,7 @@ import About from "./About"
 import Skills from "./Skills"
 import Hobbies from "./Hobbies"
 import Footer from "./Footer"
+import Contact from "./Contact"
 
 const container = document.getElementById('app');
 const root = createRoot(container); 
@@ -24,6 +25,7 @@ const App = () => {
 			<Skills/>
 			<Projects/>
 			<Hobbies/>
+			<Contact/>
 			<Footer/>
 		</Fragment>
 	)

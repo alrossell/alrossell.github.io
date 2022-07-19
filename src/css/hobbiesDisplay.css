@@ -1,0 +1,14 @@
+.hobbies-display-container {
+	border: solid 2px var(--main-dark-gray)
+}
+
+.hobbies-display-container img {
+	width: 100%;
+	height: auto;
+}
+
+.hobbies-display-container h4 {
+	text-align: center;
+}
+
+

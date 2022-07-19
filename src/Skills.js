@@ -10,9 +10,21 @@ function Skills(props) {
 
 
 	const skills = [
-		["Python", "test", <DiPython/>],
-		["Javascript", "test", <DiJavascript1/>],
-		["Java", "test", <DiJava/>],
+		[
+			"Python", 
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit", 
+			<DiPython/>
+		],
+		[
+			"Javascript", 
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit", 
+			<DiJavascript1/>
+		],
+		[
+			"Java", 
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit", 
+			<DiJava/>
+		],
 		["Machine Learning", "test", <FaCloudsmith/>],
 		["Wen Design", "test", <FaReact/>],
 		["Something", "test", <FaBuffer/> ]
@@ -32,11 +44,11 @@ function Skills(props) {
 	return (
 		<section id="skills">
 			<div id="skills-header-container">
-				<h2 id="skills-title"> Skills </h2>
-				<p className="skills-description">
+				<h2 className="black-title-text"> Skills </h2>
+				<p className="third-order-text">
 					These are the skills I've learned so far
 				</p>
-				<p className="skills-description">
+				<p className="third-order-text">
 					However I"m also want to learn new ones
 				</p>
 

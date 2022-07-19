@@ -16,8 +16,6 @@
 	max-width: 66%;
 }
 
-
-
 #about-profile-container {
 	width: auto;
 	text-align: center;
@@ -27,7 +25,7 @@
 	height: 275px;
 	width: 275px;
 	border-radius: 50%;
-	border: solid black 3px;
+	border: solid var(--main-dark-gray) 3px;
 }
 
 #about-icon-container {
@@ -36,11 +34,11 @@
 }
 
 #about-icon-container a {
-	width: 35px;
-	height: 35px;
-	margin-left: 3px;
-	margin-right: 3px;
-	line-height: 40px;
+	width: 2.75rem;
+	height: 2.75rem;
+	margin-left: 5px;
+	margin-right: 5px;
+	line-height: 62px;
 	text-align: center;
 	background-color: var(--main-black);
 	border-radius: 100%;
@@ -50,10 +48,16 @@
 #about-icon-container a:hover {
 	background-color: var(--main-light-gray);
 }
+
+#about-icon-container a svg {
+
+	width: 30px;
+	height: 30px;
+}
+
+
 #about-title-container {
 	margin-bottom: 1em;
 }
 
-#about-title {
-	margin-bottom: 0.5em;
-}
+

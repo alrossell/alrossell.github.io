@@ -3,8 +3,13 @@
 	border-radius: 100%;
 	height: 7rem;
 	width: 7rem;
-	line-height: 7.5rem;
+	line-height: 170px;
 	color: var(--main-white)
+}
+
+.skills-display-icon svg {
+	height: 70px;
+	width: 70px;
 }
 
 .skills-display-wrapper {

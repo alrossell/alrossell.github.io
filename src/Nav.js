@@ -37,17 +37,18 @@ function Nav(props) {
 					<a href="#hobbies"> HOBBIES </a>
 				</li>
 				<li className="nav-bar-item">
-					<a>
-						RESUME
-						<AiFillFileText className="nav-icon"/>													
+					<a href="#contact"> 
+						CONTACT 
+						<AiFillMail className="nav-icon" id="nav-mail"/>
 					</a>
 				</li>
 				<li className="nav-bar-item">
-					<a> 
-						CONTACT
-						<AiFillMail className="nav-icon"/>
+					<a>
+						RESUME 
+						<AiFillFileText className="nav-icon"/>													
 					</a>
 				</li>
+				
 			 </ul>
 
 		</nav>
