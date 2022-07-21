@@ -55,9 +55,12 @@
 	height: 30px;
 }
 
-
 #about-title-container {
 	margin-bottom: 1em;
+}
+
+#about-text-descritpion p {
+	margin-top: 0.35em;
 }
 
 

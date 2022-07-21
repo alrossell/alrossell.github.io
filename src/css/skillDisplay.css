@@ -24,3 +24,8 @@
 	width: 7em;
 	border-radius: 50%;
 }
+
+.skills-display-wrapper h3 {
+	font-size: 1.5rem;
+	margin: .5em;
+}

@@ -1,9 +1,10 @@
 * {
-    padding: 0px;
+	font-family: serif;    
+	padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 
-	--mobile-width: 1000px;
+	scroll-behavior: smooth;
 
 	--main-black: #000000;
 	--main-dark-gray: #343434;
@@ -15,12 +16,23 @@
 	--second-white: #FAFAFA;
 }
 
+#app {
+    height: 100%;
+}
+
 section {
 	padding-top: 55px;
 	padding-bottom: 40px;
 	border-bottom: 3px solid var(--main-black);
 	padding-left: 12vw;
 	padding-right: 12vw;
+}
+
+@media only screen and (max-width: 800px) {
+	section {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .black-title-text {
@@ -43,16 +55,17 @@ section {
 
 .second-black-text {
 	color: var(--main-black);
-	font-size: 25px;
+	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
 }
 
 .second-order-text {
 	color: var(--main-dark-gray);
-	font-size: 25px;
+	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
 }
 
 .third-order-text {
 	color: var(--main-dark-gray);
+	font-size: 1.2rem;
 }

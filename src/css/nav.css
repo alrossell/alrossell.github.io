@@ -8,7 +8,6 @@
 	position: fixed;
 	top: 0;
 
-
 	background-color: var(--main-black);
 	color: var(--main-white);
 	
@@ -29,6 +28,7 @@
 }
 
 #nav-name-wrapper b {
+	font-size: 1.5rem;
 	color: var(--main-orange);
 	transition: all 0.25s;
 }
@@ -46,8 +46,8 @@
 	color: var(--main-white);
 	text-decoration: none;
 	display:flex;
-  align-items:center;
-  justify-content:center;
+  	align-items:center;
+  	justify-content:center;
 }
 
 .nav-bar-item a:hover {
@@ -67,7 +67,7 @@
 	margin-left: 2px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
 	
 	#nav {
 		display: grid;
@@ -82,7 +82,7 @@
 		padding-left: 12vw; 
 		grid-area: name;
 	}
-	
+
 	#nav-button {
 		grid-area: butt;
 		place-self: center;
@@ -91,6 +91,13 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		position: relative;
+	}
+
+	#nav-button div {
+		position: absolute;
+		height: 100%;
+		width: 100%;
 	}
 	
 	#nav-button:hover {
@@ -112,7 +119,6 @@
 
 	#nav-links-container {
 		grid-area: links;
-	
 		height: 0px;
 		flex-direction: column;
 		overflow: hidden;
@@ -127,6 +133,14 @@
 	
 	#nav-button:focus + #nav-links-container {
 		height: 170px
+	}
+
+	#nav-button:focus {
+		pointer-events: none;
+	}
+
+	#nav-button:focus span {
+		background-color: var(--main-orange);
 	}
 
 }

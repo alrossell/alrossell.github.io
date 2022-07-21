@@ -1,6 +1,8 @@
 import React from "react"
 
 import { AiFillLinkedin, AiFillGithub, AiFillFileText } from "react-icons/ai";
+import { Link } from "react-router-dom";
+
 
 import "./css/about.css"
 
@@ -9,17 +11,17 @@ function About(props) {
 		<section id="about">
 			<div id="about-container"> 
 				<div id="about-profile-container">
-					<img id="about-profile-img" src="./monkey2.png"/>
+					<img id="about-profile-img" src="./selfie2.JPG"/>
 					<div id="about-icon-container">
-						<a> 
+						<a href="https://linkedin.com/in/andrew-rossell-18094a193" target="_blank" rel="noopener noreferrer"> 
 							<AiFillLinkedin />
 						</a>
-						<a>
+						<a href="https://github.com/alrossell/" target="_blank" rel="noopener noreferrer">
 							<AiFillGithub />
 						</a>
-						<a>
+						<Link to="/resume" target="_blank" rel="noopener noreferrer">
 							<AiFillFileText />
-						</a>
+          				</Link>
 					</div>
 				</div>
 
@@ -35,24 +37,18 @@ function About(props) {
 							Loyola Marymount University Graduated
 						</p>
 					</div>
-					<div className="third-order-text">		
+					<div id="about-text-descritpion" className="third-order-text">		
 						<p>
-							I'm a graduate of LMU's Class of 2022 and my passion is Computer Science.
+							I'm a graduate of Loyola Marymount University class of 2022 with a 
+							Bachelor of Science in Computer Science and a minor in Applied Math.
 						</p>
 						<p>
-							My interest in the field is mainly artifical intelligence, however I m also interested webdesign.
-						</p>
-						<p>
-							I'm a graduate of LMU's Class of 2022 and my passion is Computer Science.
-						</p>
-						<p>
-							My interest in the field is mainly artifical intelligence, however I m also interested webdesign.
+							Surpisingly I have a passion for CS especially in the different fields 
+							of artifical intelligence and web design.
 						</p>
 					</div>
 				</div>
 			</div>
-						
-			
 		</section>
 	)
 }

@@ -1,6 +1,4 @@
-#projects {
-	background-color: var(--main-orange);
-}
+
 
 #projects-header-wrapper {
 	text-align: center;
@@ -11,9 +9,31 @@
 	flex-direction: column;
 	justify-content: center;
 	list-style: none;
-	margin-left: 12vw;
-	margin-right: 12vw;
+	margin-left: 8vw;
+	margin-right: 8vw;
 }
 
+#projects-github-wrapper {
+	text-align: center;
+	margin: 5vw;
+}
+
+#projects-github-wrapper p {
+	text-align: center;
+	margin: 2em;
+}
+
+#projects-github-wrapper a {
+	background-color: var(--main-black);
+	padding: 1em;
+	border-radius: 4px;
+	font-size: 25px;
+	color: var(--main-white);
+	text-align: center;
+}
+
+#projects-github-wrapper a:hover {
+	background-color: var(--main-dark-gray);
+}
 
 

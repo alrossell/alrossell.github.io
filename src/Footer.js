@@ -5,7 +5,12 @@ import "./css/footer.css"
 function Footer(props) {
 	return (
 		<footer id="footer">
-			footer
+			<span>
+				Copyright © Andrew Rossell 2022
+			</span>
+			<span>
+				Last Updated on: July 21th, 2022
+			</span>
 		</footer>
 	)
 }

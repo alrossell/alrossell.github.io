@@ -1,5 +1,6 @@
 .hobbies-display-container {
-	border: solid 2px var(--main-dark-gray)
+	border: solid 2px var(--main-dark-gray);
+	border-radius: 2px;
 }
 
 .hobbies-display-container img {
@@ -9,6 +10,10 @@
 
 .hobbies-display-container h4 {
 	text-align: center;
+}
+
+.hobbies-display-text-container {
+	margin: 0.25em;
 }
 
 

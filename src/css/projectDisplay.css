@@ -12,7 +12,18 @@
 	background-color: var(--main-dark-gray);
 }
 
-@media only screen and (max-width: 1000px) {
+.project-display-text a:hover {
+	color: var(--main-orange);
+	transition: all 0.2s;
+}
+
+.project-display img {
+	width: 25vw;
+	border-radius: 4px;
+	height: auto;
+}
+
+@media only screen and (max-width: 800px) {
 	.project-display {
 		flex-direction: column;
 
@@ -29,8 +40,6 @@
 		margin-top: 1vh;
 		margin-bottom: 1vh;
 		padding-top: 4px;
-
-
 		width: 100%;
 	}
 

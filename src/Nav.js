@@ -1,16 +1,14 @@
 import React from "react"
-import {useState} from 'react';
 import { AiFillMail, AiFillFileText } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+
+
 
 import './css/nav.css'
 
-function Nav(props) {
-	const [isActive, setIsActive] = useState(false);
-	
-	function toggleNav() {
-		document.getElementById("nav-links-container")
-	}
-
+function Nav(props) {	
+    const navigate = useNavigate();
 	return (
 		<nav id="nav">
 			<a href="#header" id="nav-name-wrapper">
@@ -21,17 +19,21 @@ function Nav(props) {
 				<span></span>
 				<span></span>
 				<span></span>
+				<div></div>
 			</button>
 
 			<ul id="nav-links-container" className="test">
 			   <li className="nav-bar-item">
-					<a href="#about"> ABOUT </a>
+					<a href="#about"> 
+						ABOUT
+					</a>
+
+				</li>
+				<li className="nav-bar-item">
+					<a href="/#projects"> PROJECTS </a>
 				</li>
 				<li className="nav-bar-item">
 					<a href="#skills"> SKILLS </a>		
-				</li>
-				<li className="nav-bar-item">
-					<a href="#projects"> PROJECTS </a>
 				</li>
 				<li className="nav-bar-item">
 					<a href="#hobbies"> HOBBIES </a>
@@ -43,10 +45,10 @@ function Nav(props) {
 					</a>
 				</li>
 				<li className="nav-bar-item">
-					<a>
+					<Link to="/resume" target="_blank" rel="noopener noreferrer">
 						RESUME 
-						<AiFillFileText className="nav-icon"/>													
-					</a>
+						<AiFillFileText className="nav-icon"/>
+          			</Link>
 				</li>
 				
 			 </ul>

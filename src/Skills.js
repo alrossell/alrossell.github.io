@@ -8,30 +8,43 @@ import "./css/skill.css"
 
 function Skills(props) {
 
-
 	const skills = [
 		[
-			"Python", 
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit", 
+			"Python",
+			"I've been using Python for over two years now, through doing \
+			classwork and personal projects. I've used it to create AI project \
+			such as my Lux AI project and Haiku generator.",
 			<DiPython/>
 		],
 		[
-			"Javascript", 
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit", 
+			"JavaScript, HTML, CSS",
+			"With three years of Javascript, HTML, and CSS, I've used utilizing it in both various \
+			class projects and personal projects. I used them to create this website.", 
 			<DiJavascript1/>
 		],
 		[
-			"Java", 
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit", 
+			"C++", 
+			"I picked up C++ half a year ago for a senior project. I tought myself C++ \
+			to create a connect four game and the Minimax algorthim that solves it.",
 			<DiJava/>
 		],
-		["Machine Learning", "test", <FaCloudsmith/>],
-		["Wen Design", "test", <FaReact/>],
-		["Something", "test", <FaBuffer/> ]
+		[
+			"Pytorch", 
+			"I've been using Pytorch for over a year to for classworks and personal project. \
+			I used Pytorch for creating my model in my Lux-AI project.",
+			 <FaCloudsmith/>
+		],
+		[
+			"React", 
+			"Over the last two years, I've been using React for perosnal projects and currently \
+			learning even more about it with current personal project. I used it to create my \
+			Turing machine simulator webapp.", 
+			<FaReact/>
+		],
 	]
 
-	const skillsItems = skills.map((object) => 
-		<li className="skills-item-container"> 
+	const skillsItems = skills.map((object, index) => 
+		<li key={index} className="skills-item-container"> 
 			<SkillsDisplay 
 				title = {object[0]}
 				description = {object[1]}
@@ -49,7 +62,7 @@ function Skills(props) {
 					These are the skills I've learned so far
 				</p>
 				<p className="third-order-text">
-					However I"m also want to learn new ones
+					However I'm always looks for new and exciting ones to learn
 				</p>
 
 			</div>

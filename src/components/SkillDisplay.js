@@ -9,7 +9,7 @@ function SkillsDisplay(props) {
 				{props.img}	
 			</div>
 			<h3> {props.title} </h3>
-			<p> {props.description} </p>
+			<p className="third-order-text"> {props.description} </p>
 		</div>
 	)
 }

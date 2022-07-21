@@ -12,7 +12,7 @@
 #hobbies-container {
 	display:flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	list-style: none;
 	flex-wrap: wrap;
@@ -21,14 +21,14 @@
 }
 
 .hobbies-item-container {
-	margin-left: 3vw;
-	margin-right: 3vw;
-	max-width: 22%;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	max-width: 30%;
 	margin-bottom: 2vw;
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
 	.hobbies-item-container {
 		max-width: 70%;
 	}

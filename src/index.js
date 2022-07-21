@@ -1,34 +1,27 @@
-import ReactDOM from 'react-dom';
 import React, {Fragment} from 'react';
 import { createRoot } from 'react-dom/client';
 
-import "./css/index.css"
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Portfolio from './Portfolio';
+import Resume from "./Resume"
 
-import Nav from "./Nav"
-import Header from "./Header"
-import Projects from "./Projects"
-import About from "./About"
-import Skills from "./Skills"
-import Hobbies from "./Hobbies"
-import Footer from "./Footer"
-import Contact from "./Contact"
 
 const container = document.getElementById('app');
 const root = createRoot(container); 
 
 const App = () => {
-	return (
-		<Fragment>
-			<Nav/>
-			<Header/>
-			<About/> 
-			<Skills/>
-			<Projects/>
-			<Hobbies/>
-			<Contact/>
-			<Footer/>
-		</Fragment>
-	)
+    return (
+        <Fragment>
+            <Router>
+                <Routes>
+                    <Route path='/' element={<Portfolio  />} />
+                    <Route path='/resume' element={<Resume/>} />
+                </Routes>
+            </Router>
+        </Fragment>
+    );
 }
 
 root.render(<App/>);
+
+

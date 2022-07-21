@@ -5,7 +5,7 @@
 	justify-content: center;
 
 	border-bottom: 3px solid var(--main-black);
-	background-image: url("../la3.jpg");
+	background-image: url("../../public/la.jpg");
 	background-repeat: no-repeat;
 	*background-attachment: scroll;
 	background-attachment: fixed;
@@ -15,7 +15,6 @@
 	-o-background-size: cover;
 	background-size: cover;
 	height: 85vh;
-
 }
 
 #header-container {
@@ -36,4 +35,12 @@
 	height: 250px;
 	width: 250px;
 	margin-top: 2vh;
+}
+
+#header-text {
+	color: var(--main-black);
+	font-size: 56px;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	
 }

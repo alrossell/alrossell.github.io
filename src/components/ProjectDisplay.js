@@ -5,11 +5,13 @@ import "../css/projectDisplay.css"
 function ProjectDisplay(props) {
 	return (
 		<div className="project-display">
-			<img src="../monkey2.png"/>
+			<img src={props.image}/>
 			<div className="project-display-bar"/>
 			<div className="project-display-text">
-				<h4 className="first-order-text"> 
-					<b> {props.title} </b> 
+				<h4> 
+					<a href={props.link} className="first-order-text" target="_blank" rel="noopener noreferrer">
+						<b> {props.title} </b> 
+					</a>
 				</h4>
 				<p className="second-order-text"> 
 					{props.subTitle} 
