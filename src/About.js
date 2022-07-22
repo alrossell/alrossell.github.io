@@ -1,17 +1,23 @@
 import React from "react"
 
 import { AiFillLinkedin, AiFillGithub, AiFillFileText } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
+import selfie2 from "./assets/selfie2.JPG";
 
 import "./css/about.css"
 
 function About(props) {
+	const navigate = useNavigate();
+	function toResume() {
+		navigate('/resume');
+	}
+
 	return (
 		<section id="about">
 			<div id="about-container"> 
 				<div id="about-profile-container">
-					<img id="about-profile-img" src="./selfie2.JPG"/>
+					<img id="about-profile-img" src={selfie2}/>
 					<div id="about-icon-container">
 						<a href="https://linkedin.com/in/andrew-rossell-18094a193" target="_blank" rel="noopener noreferrer"> 
 							<AiFillLinkedin />
@@ -19,7 +25,7 @@ function About(props) {
 						<a href="https://github.com/alrossell/" target="_blank" rel="noopener noreferrer">
 							<AiFillGithub />
 						</a>
-						<Link to="/resume" target="_blank" rel="noopener noreferrer">
+						<Link onClick={toResume} to="/" target="_blank" rel="noopener noreferrer">
 							<AiFillFileText />
           				</Link>
 					</div>

@@ -9,6 +9,10 @@ import './css/nav.css'
 
 function Nav(props) {	
     const navigate = useNavigate();
+	function toResume() {
+		navigate('/resume');
+	}
+	
 	return (
 		<nav id="nav">
 			<a href="#header" id="nav-name-wrapper">
@@ -44,8 +48,8 @@ function Nav(props) {
 						<AiFillMail className="nav-icon" id="nav-mail"/>
 					</a>
 				</li>
-				<li className="nav-bar-item">
-					<Link to="/resume" target="_blank" rel="noopener noreferrer">
+				<li onClick={toResume} className="nav-bar-item">
+					<Link to="/" target="_blank" rel="noopener noreferrer">
 						RESUME 
 						<AiFillFileText className="nav-icon"/>
           			</Link>

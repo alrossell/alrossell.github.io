@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom';
 import Portfolio from './Portfolio';
 import Resume from "./Resume"
 
@@ -12,12 +12,13 @@ const root = createRoot(container);
 const App = () => {
     return (
         <Fragment>
-            <Router>
+            <Router >
                 <Routes>
-                    <Route path='/' element={<Portfolio  />} />
+                    <Route path='/' element={<Portfolio />} />
                     <Route path='/resume' element={<Resume/>} />
                 </Routes>
             </Router>
+            
         </Fragment>
     );
 }

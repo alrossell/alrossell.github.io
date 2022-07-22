@@ -1,7 +1,11 @@
 import React from "react";
-import HobbiesDisplay from "./components/HobbiesDisplay"
+import HobbiesDisplay from "./components/HobbiesDisplay";
 
-import "./css/hobbies.css"
+import "./css/hobbies.css";
+
+import linux from "./assets/linux.jpeg";
+import nerual from "./assets/nerual.jpeg";
+import switches from "./assets/switches.jpg"
 
 function Hobbies() {
 
@@ -13,7 +17,7 @@ function Hobbies() {
 			I really prefered it over using Windows, which I was using before. \
 			I decided to switch over to Linux recently, installing Pop!_OS on \
 			my labtop and Arch on my desktop.",
-			"linux.jpeg"
+			linux
 		],
 		[
 			"AI", 
@@ -22,7 +26,7 @@ function Hobbies() {
 			networks which for me was the prefect mixture of math and computer \
 			science to create fun models which are able todo things that would \
 			have seen impossible before.",
-			"nerual.jpeg"
+			nerual
 		],
 		[
 			"Mechinal Keyboards", 
@@ -31,7 +35,7 @@ function Hobbies() {
 			keyboard that makes typing as pleasing as possible really helps \
 			during coding at times. This way I've built several different \
 			keyboards to find the right experience for myself.",
-			"switches.jpg"
+			switches
 		],
 	]
 

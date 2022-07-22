@@ -4,6 +4,10 @@ import "./css/projects.css"
 
 import ProjectDisplay from "./components/ProjectDisplay"
 
+import lux from "./assets/lux-ai.png";
+import connect from "./assets/connect-four.jpg";
+import lstm from "./assets/lstm.jpg";
+import turing from "./assets/turing.png";
 
 function Projects(props) {
 
@@ -16,7 +20,7 @@ function Projects(props) {
 			units. We appourch this project by having the agent using \
 			convolution nerual networks. We trained the agent through reinforcement \
 			learning with data we collected on Kaggle.",
-			"./lux-ai.png",
+			lux,
 			""
 		],
 		[
@@ -29,7 +33,7 @@ function Projects(props) {
 			tranpilered to WebAssembly. The bot uses MiniMax algorthim \
 			optimize with alpha-beta pruning and transposition tables. It can \
 			predict 12 moves ahead in C++ and 10 moves ahead in WebAssembly.",
-			"./connect-four.jpg",
+			connect,
 			"https://github.com/alrossell/Connect4WASM"
 		],
 		[
@@ -39,7 +43,7 @@ function Projects(props) {
 			We created two differnet models for this project. The first model was \
 			a character-to-character model which generator (idk). The second model \
 			using OpenAI's GPT-3 which generators models (idk).",
-			"./lstm.jpg",
+			lstm,
 			""
 		],
 		[
@@ -48,7 +52,7 @@ function Projects(props) {
 			"A webapp the can simulator a two way infinite tape Turing machine, \
 			given the rules and it's initial tape. The webapp uses Javascript and \
 			React for both it's frontend and it's backend.",
-			"./turing.png",
+			turing,
 			"https://github.com/alrossell/Turing"
 		]
 	]
